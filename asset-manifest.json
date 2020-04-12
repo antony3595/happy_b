@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/anna_happy_birthday/static/css/main.79532963.chunk.css",
-    "main.js": "/anna_happy_birthday/static/js/main.0caf015e.chunk.js",
-    "main.js.map": "/anna_happy_birthday/static/js/main.0caf015e.chunk.js.map",
-    "runtime-main.js": "/anna_happy_birthday/static/js/runtime-main.a8b3495c.js",
-    "runtime-main.js.map": "/anna_happy_birthday/static/js/runtime-main.a8b3495c.js.map",
-    "static/js/2.cf268293.chunk.js": "/anna_happy_birthday/static/js/2.cf268293.chunk.js",
-    "static/js/2.cf268293.chunk.js.map": "/anna_happy_birthday/static/js/2.cf268293.chunk.js.map",
-    "index.html": "/anna_happy_birthday/index.html",
-    "precache-manifest.b4b0e15ecf3a2130a62de0baf4a595ad.js": "/anna_happy_birthday/precache-manifest.b4b0e15ecf3a2130a62de0baf4a595ad.js",
-    "service-worker.js": "/anna_happy_birthday/service-worker.js",
-    "static/css/main.79532963.chunk.css.map": "/anna_happy_birthday/static/css/main.79532963.chunk.css.map",
-    "static/js/2.cf268293.chunk.js.LICENSE.txt": "/anna_happy_birthday/static/js/2.cf268293.chunk.js.LICENSE.txt",
-    "static/media/fox.jpg": "/anna_happy_birthday/static/media/fox.e1243a2e.jpg",
-    "static/media/fox2.jpg": "/anna_happy_birthday/static/media/fox2.f4464f1f.jpg"
+    "main.css": "/happy_b/static/css/main.79532963.chunk.css",
+    "main.js": "/happy_b/static/js/main.f6e1dcb3.chunk.js",
+    "main.js.map": "/happy_b/static/js/main.f6e1dcb3.chunk.js.map",
+    "runtime-main.js": "/happy_b/static/js/runtime-main.2d230455.js",
+    "runtime-main.js.map": "/happy_b/static/js/runtime-main.2d230455.js.map",
+    "static/js/2.cf268293.chunk.js": "/happy_b/static/js/2.cf268293.chunk.js",
+    "static/js/2.cf268293.chunk.js.map": "/happy_b/static/js/2.cf268293.chunk.js.map",
+    "index.html": "/happy_b/index.html",
+    "precache-manifest.ef66f1f6cef80c2f6d331cacf05afca6.js": "/happy_b/precache-manifest.ef66f1f6cef80c2f6d331cacf05afca6.js",
+    "service-worker.js": "/happy_b/service-worker.js",
+    "static/css/main.79532963.chunk.css.map": "/happy_b/static/css/main.79532963.chunk.css.map",
+    "static/js/2.cf268293.chunk.js.LICENSE.txt": "/happy_b/static/js/2.cf268293.chunk.js.LICENSE.txt",
+    "static/media/fox.jpg": "/happy_b/static/media/fox.e1243a2e.jpg",
+    "static/media/fox2.jpg": "/happy_b/static/media/fox2.f4464f1f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a8b3495c.js",
+    "static/js/runtime-main.2d230455.js",
     "static/js/2.cf268293.chunk.js",
     "static/css/main.79532963.chunk.css",
-    "static/js/main.0caf015e.chunk.js"
+    "static/js/main.f6e1dcb3.chunk.js"
   ]
 }
