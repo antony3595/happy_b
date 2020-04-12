@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3592c07e968b74dc0b3943ccf1e70f0a",
+    "revision": "76a70767c5b6bf432ed7f872aeb34818",
     "url": "/happy_b/index.html"
   },
   {
-    "revision": "15378bbc58b2f6802042",
-    "url": "/happy_b/static/css/main.a0e2c113.chunk.css"
+    "revision": "ebe90f5b45e2c49c8896",
+    "url": "/happy_b/static/css/main.bcd2a746.chunk.css"
   },
   {
-    "revision": "bc6476dbbc77bc5cb21a",
-    "url": "/happy_b/static/js/2.cf268293.chunk.js"
+    "revision": "de6508b3dde5de0d191e",
+    "url": "/happy_b/static/js/2.318bb726.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/happy_b/static/js/2.cf268293.chunk.js.LICENSE.txt"
+    "url": "/happy_b/static/js/2.318bb726.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "15378bbc58b2f6802042",
-    "url": "/happy_b/static/js/main.34739d66.chunk.js"
+    "revision": "ebe90f5b45e2c49c8896",
+    "url": "/happy_b/static/js/main.0b2f4bb8.chunk.js"
   },
   {
     "revision": "af3c6452adb6436f30f3",
