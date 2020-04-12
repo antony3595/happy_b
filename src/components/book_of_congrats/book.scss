@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+
+.sky {
+	position: fixed;
+	pointer-events: none;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: none repeat scroll 0 0 transparent;
+	color: #fff;
+	padding: 12px;
+	display: block;
+}
+
+.book {
+	position: relative;
+	max-width: 1024px;
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+	h4 {
+		font-size: 26px;
+		line-height: 1px;
+		font-family: "Amatic SC", cursive !important;
+	}
+	h3 {
+		font-size: 23px;
+		padding: 0 8px;
+		font-family: "Amatic SC", cursive !important;
+	}
+}
+
+::selection {
+	background: transparent;
+}
+
+.color1 {
+	color: #1bbc9b;
+} /*MOUNTAIN MEADOW*/
+.color2 {
+	color: #c0392b; /*TALL POPPY*/
+}
+
+.card {
+	margin: 0;
+	padding: 0;
+	font-family: "Caveat", cursive !important;
+
+	color: #013243; /*SHERPA BLUE*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: 400px;
+	background: #e0e1dc;
+	transform-style: preserve-3d;
+	transform: translate(-50%, -50%) perspective(2000px);
+	box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5), 20px 0 60px rgba(0, 0, 0, 0.5);
+	transition: 0.7s;
+
+	&__bark {
+		position: absolute;
+		background: #e0e1dc;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: 0.7s;
+	}
+
+	&--open {
+		transform: translate(-50%, -50%) perspective(2000px) rotate(15deg) scale(1.2);
+		box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5), 0 10px 100px rgba(0, 0, 0, 0.5);
+
+		& .card__image-box {
+			transform: rotateY(-135deg);
+		}
+		& .card__bark {
+			opacity: 1;
+			transition: 0.6s;
+			box-shadow: 300px 200px 100px rgba(0, 0, 0, 0.4) inset;
+		}
+		& .card__image-box__text {
+			opacity: 0;
+			transition: 0.6s;
+		}
+	}
+}
+
+.card__image-box {
+	background-color: #36174a;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	position: relative;
+	transform-origin: left;
+	transition: 0.7s;
+	will-change: transform;
+	overflow: hidden;
+	img {
+		min-width: 250px;
+		max-height: 400px;
+		width: 100%;
+		object-fit: cover;
+	}
+	&__img {
+		padding: 20px;
+		box-sizing: content-box;
+		height: calc(100% - 60px);
+		overflow: hidden;
+	}
+
+	&__text {
+		color: white;
+		background-color: #36174a;
+		position: absolute;
+		bottom: 40px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.card .details {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 0 0 0 10px;
+	z-index: -1;
+	margin-top: 70px;
+	width: 90%;
+}
+.card .text {
+	padding-top: 20px;
+}
+
+.card .details p {
+	margin: 14px 0;
+	font-size: 15px;
+	line-height: 5px;
+	transform: rotate(-10deg);
+	padding: 0 0 0 20px;
+}
+
+.card .details h4 {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}

@@ -1,0 +1,26 @@
+@mixin media($width) {
+	@media only screen and (max-width: $width) {
+		@content;
+	}
+}
+
+@mixin center {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
+	@-moz-keyframes #{$animationName} {
+		@content;
+	}
+	@-o-keyframes #{$animationName} {
+		@content;
+	}
+	@keyframes #{$animationName} {
+		@content;
+	}
+}

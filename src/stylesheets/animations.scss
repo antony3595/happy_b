@@ -1,0 +1,40 @@
+@import "keyframes";
+
+@mixin animate($name, $duration, $timing_function: ease, $iteration: 1, $direction: normal) {
+	-webkit-animation-name: $name;
+	-moz-animation-name: $name;
+	-o-animation-name: $name;
+	animation-name: $name;
+	-webkit-animation-timing-function: $timing_function;
+	-moz-animation-timing-function: $timing_function;
+	-o-animation-timing-function: $timing_function;
+	animation-timing-function: $timing_function;
+	-webkit-animation-duration: $duration;
+	-moz-animation-duration: $duration;
+	-o-animation-duration: $duration;
+	animation-duration: $duration;
+	-webkit-animation-iteration-count: $iteration;
+	-moz-animation-iteration-count: $iteration;
+	-o-animation-iteration-count: $iteration;
+	animation-iteration-count: $iteration;
+	-webkit-animation-direction: $direction;
+	-moz-animation-direction: $direction;
+	-o-animation-direction: $direction;
+	animation-direction: $direction;
+}
+
+@mixin baloon1 {
+	@include animate(baloon1, 6s, ease-in-out, infinite);
+}
+@mixin baloon2 {
+	@include animate(baloon2, 6s, ease-in-out, infinite);
+}
+@mixin baloon3 {
+	@include animate(baloon4, 6s, ease-in-out, infinite);
+}
+@mixin baloon4 {
+	@include animate(baloon1, 5s, ease-in-out, infinite);
+}
+@mixin baloon5 {
+	@include animate(baloon3, 5s, ease-in-out, infinite);
+}

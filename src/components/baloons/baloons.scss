@@ -1,0 +1,119 @@
+@import "../../stylesheets/animations";
+@import "../../stylesheets/mixins";
+
+.baloons-container {
+	width: 100%;
+	max-width: 640px;
+	height: 220px;
+	margin: 0 auto;
+	position: relative;
+}
+.balloon {
+	min-width: 320px;
+	width: 100%;
+	height: 100%;
+	padding-top: 30px;
+	position: relative;
+	font-family: "Wendy One", sans-serif;
+	@include media(640px) {
+		overflow-x: scroll;
+	}
+
+	span {
+		text-transform: uppercase;
+		font-size: 4.8em;
+		color: white;
+		position: relative;
+		top: 30px;
+		left: 50%;
+		margin-left: -27px;
+	}
+
+	& > div {
+		width: 104px;
+		height: 140px;
+		background: rgba(182, 15, 97, 0.9);
+		border-radius: 80% 80% 80% 80%;
+		margin: 0 auto;
+		position: absolute;
+		padding: 10px;
+		box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
+		-webkit-transform-origin: bottom center;
+	}
+
+	& > div:nth-child(1) {
+		background: rgba(182, 15, 97, 0.9);
+		left: 0;
+		box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
+		@include baloon1;
+		&:before {
+			color: rgba(182, 15, 97, 0.9);
+		}
+	}
+
+	& > div:nth-child(2) {
+		background: rgba(242, 112, 45, 0.9);
+		left: 120px;
+		box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
+		@include baloon2;
+		&:before {
+			color: rgba(242, 112, 45, 0.9);
+		}
+	}
+	& > div:nth-child(3) {
+		background: rgba(45, 181, 167, 0.9);
+		left: 240px;
+		box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
+		@include baloon3;
+		&:before {
+			color: rgba(45, 181, 167, 0.9);
+		}
+	}
+	& > div:nth-child(4) {
+		background: rgba(190, 61, 244, 0.9);
+		left: 360px;
+		box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
+		@include baloon4;
+		&:before {
+			color: rgba(190, 61, 244, 0.9);
+		}
+		span {
+			display: inline-block;
+			transform: scale(-1, 1);
+		}
+	}
+	& > div:nth-child(5) {
+		background: rgba(180, 224, 67, 0.9);
+		left: 480px;
+		box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
+		@include baloon5;
+		&:before {
+			color: rgba(180, 224, 67, 0.9);
+		}
+	}
+	& > div:nth-child(6) {
+		background: rgba(242, 194, 58, 0.9);
+		left: 600px;
+		box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
+		@include baloon2;
+		&:before {
+			color: rgba(242, 194, 58, 0.9);
+		}
+	}
+	& > div:before {
+		color: rgba(182, 15, 97, 0.9);
+		position: absolute;
+		bottom: -16px;
+		left: calc(50% - 8px);
+		content: "▲";
+		font-size: 1em;
+	}
+}
+
+h1 {
+	position: relative;
+	top: 200px;
+	text-align: center;
+	color: white;
+	font-size: 3.5em;
+}
