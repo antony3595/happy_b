@@ -12,7 +12,7 @@ function App() {
 		<div className="page">
 			<Baloons />
 			<CongratulationBook isOpen={isOpen} setOpen={setOpen} setActive={setActive} />
-			{isOpen && active ? <FacesRain setActive={setActive} /> : null}
+			{active ? <FacesRain setActive={setActive} /> : null}
 		</div>
 	);
 }
